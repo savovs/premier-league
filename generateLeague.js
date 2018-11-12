@@ -1,14 +1,3 @@
-// The league table should contain the following information, sorted by rank:
-//     rank
-//     team name
-//     total wins
-//     total draws
-//     total defeats
-//     goals for
-//     goal against
-//     goal difference
-//     points
-
 // Vlady Veselinov, Tested on Node v11.1.0
 const fs = require('fs')
 const data = JSON.parse(fs.readFileSync('data.json'))
