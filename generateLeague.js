@@ -9,9 +9,7 @@
 //     goal difference
 //     points
 
-// Rank is determined by points, then goal difference, then goals scored.
-
-// Vlady Veselinov, Take Home Test, Tested on Node v11.1.0
+// Vlady Veselinov, Tested on Node v11.1.0
 const fs = require('fs')
 const data = JSON.parse(fs.readFileSync('data.json'))
 
@@ -23,8 +21,6 @@ const teams = {}
 
 const defaultTeam = {
   name: 'Default Name',
-  code: 'CCC',
-  key: 'keyname',
   wins: 0,
   draws: 0,
   defeats: 0,
@@ -36,6 +32,9 @@ const defaultTeam = {
 
 function updateTeam(team, goalsFor = 0, goalsAgainst = 0) {
   const { key } = team
+
+  delete team['key']
+  delete team['code']
 
   const didWinNumber = goalsFor > goalsAgainst ? 1 : 0
   const didDrawNumber = goalsFor === goalsAgainst ? 1 : 0
@@ -64,7 +63,6 @@ function updateTeam(team, goalsFor = 0, goalsAgainst = 0) {
     }
   } else {
     const oldState = teams[key]
-    console.log(oldState.goalsFor + goalsFor)
 
     teams[key] = {
       ...oldState,
@@ -86,7 +84,20 @@ matches.forEach(match => {
   updateTeam(team2, score2, score1)
 })
 
-fs.writeFile('results.json', JSON.stringify(teams, null, 4), (error) => {
+function compareTeams(team1, team2) {
+  if (team1.points !== team2.points) {
+    return team1.points - team2.points
+  } else if (team1.goalDifference !== team2.goalDifference) {
+    return team1.goalDifference - team2.goalDifference
+  }
+   
+  return team1.goalsFor - team2.goalsFor
+}
+
+let sorted = Object.values(teams).sort(compareTeams).reverse()
+sorted = sorted.map((team, index) => ({ rank: index + 1, ...team }))
+
+fs.writeFile('results.json', JSON.stringify(sorted, null, 4), (error) => {
   if (error) {
     throw error;
   }
@@ -94,4 +105,5 @@ fs.writeFile('results.json', JSON.stringify(teams, null, 4), (error) => {
   console.log('Done. Look for results.json')
 })
 
-// console.log('\nTeams:\n', teams)
+// Data taken from https://github.com/openfootball/football.json/blob/master/2016-17/en.1.json
+// Results look correct comparing to this page https://www.flashscores.co.uk/football/england/premier-league-2016-2017/standings/

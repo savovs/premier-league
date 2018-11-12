@@ -1,0 +1,222 @@
+[
+    {
+        "rank": 1,
+        "name": "Chelsea",
+        "wins": 30,
+        "draws": 3,
+        "defeats": 5,
+        "goalsFor": 85,
+        "goalsAgainst": 33,
+        "goalDifference": 52,
+        "points": 93
+    },
+    {
+        "rank": 2,
+        "name": "Tottenham Hotspur",
+        "wins": 26,
+        "draws": 8,
+        "defeats": 4,
+        "goalsFor": 86,
+        "goalsAgainst": 26,
+        "goalDifference": 60,
+        "points": 86
+    },
+    {
+        "rank": 3,
+        "name": "Manchester City",
+        "wins": 23,
+        "draws": 9,
+        "defeats": 6,
+        "goalsFor": 80,
+        "goalsAgainst": 39,
+        "goalDifference": 41,
+        "points": 78
+    },
+    {
+        "rank": 4,
+        "name": "Liverpool",
+        "wins": 22,
+        "draws": 10,
+        "defeats": 6,
+        "goalsFor": 78,
+        "goalsAgainst": 42,
+        "goalDifference": 36,
+        "points": 76
+    },
+    {
+        "rank": 5,
+        "name": "Arsenal",
+        "wins": 23,
+        "draws": 6,
+        "defeats": 9,
+        "goalsFor": 77,
+        "goalsAgainst": 44,
+        "goalDifference": 33,
+        "points": 75
+    },
+    {
+        "rank": 6,
+        "name": "Manchester United",
+        "wins": 18,
+        "draws": 15,
+        "defeats": 5,
+        "goalsFor": 54,
+        "goalsAgainst": 29,
+        "goalDifference": 25,
+        "points": 69
+    },
+    {
+        "rank": 7,
+        "name": "Everton",
+        "wins": 17,
+        "draws": 10,
+        "defeats": 11,
+        "goalsFor": 62,
+        "goalsAgainst": 44,
+        "goalDifference": 18,
+        "points": 61
+    },
+    {
+        "rank": 8,
+        "name": "Southampton",
+        "wins": 12,
+        "draws": 10,
+        "defeats": 16,
+        "goalsFor": 41,
+        "goalsAgainst": 48,
+        "goalDifference": -7,
+        "points": 46
+    },
+    {
+        "rank": 9,
+        "name": "Bournemouth",
+        "wins": 12,
+        "draws": 10,
+        "defeats": 16,
+        "goalsFor": 55,
+        "goalsAgainst": 67,
+        "goalDifference": -12,
+        "points": 46
+    },
+    {
+        "rank": 10,
+        "name": "West Bromwich Albion",
+        "wins": 12,
+        "draws": 9,
+        "defeats": 17,
+        "goalsFor": 43,
+        "goalsAgainst": 51,
+        "goalDifference": -8,
+        "points": 45
+    },
+    {
+        "rank": 11,
+        "name": "West Ham United",
+        "wins": 12,
+        "draws": 9,
+        "defeats": 17,
+        "goalsFor": 47,
+        "goalsAgainst": 64,
+        "goalDifference": -17,
+        "points": 45
+    },
+    {
+        "rank": 12,
+        "name": "Leicester City",
+        "wins": 12,
+        "draws": 8,
+        "defeats": 18,
+        "goalsFor": 48,
+        "goalsAgainst": 63,
+        "goalDifference": -15,
+        "points": 44
+    },
+    {
+        "rank": 13,
+        "name": "Stoke City",
+        "wins": 11,
+        "draws": 11,
+        "defeats": 16,
+        "goalsFor": 41,
+        "goalsAgainst": 56,
+        "goalDifference": -15,
+        "points": 44
+    },
+    {
+        "rank": 14,
+        "name": "Crystal Palace",
+        "wins": 12,
+        "draws": 5,
+        "defeats": 21,
+        "goalsFor": 50,
+        "goalsAgainst": 63,
+        "goalDifference": -13,
+        "points": 41
+    },
+    {
+        "rank": 15,
+        "name": "Swansea",
+        "wins": 12,
+        "draws": 5,
+        "defeats": 21,
+        "goalsFor": 45,
+        "goalsAgainst": 70,
+        "goalDifference": -25,
+        "points": 41
+    },
+    {
+        "rank": 16,
+        "name": "Burnley",
+        "wins": 11,
+        "draws": 7,
+        "defeats": 20,
+        "goalsFor": 39,
+        "goalsAgainst": 55,
+        "goalDifference": -16,
+        "points": 40
+    },
+    {
+        "rank": 17,
+        "name": "Watford",
+        "wins": 11,
+        "draws": 7,
+        "defeats": 20,
+        "goalsFor": 40,
+        "goalsAgainst": 68,
+        "goalDifference": -28,
+        "points": 40
+    },
+    {
+        "rank": 18,
+        "name": "Hull City",
+        "wins": 9,
+        "draws": 7,
+        "defeats": 22,
+        "goalsFor": 37,
+        "goalsAgainst": 80,
+        "goalDifference": -43,
+        "points": 34
+    },
+    {
+        "rank": 19,
+        "name": "Middlesbrough",
+        "wins": 5,
+        "draws": 13,
+        "defeats": 20,
+        "goalsFor": 27,
+        "goalsAgainst": 53,
+        "goalDifference": -26,
+        "points": 28
+    },
+    {
+        "rank": 20,
+        "name": "Sunderland",
+        "wins": 6,
+        "draws": 6,
+        "defeats": 26,
+        "goalsFor": 29,
+        "goalsAgainst": 69,
+        "goalDifference": -40,
+        "points": 24
+    }
+]
